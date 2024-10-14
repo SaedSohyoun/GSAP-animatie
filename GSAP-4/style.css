@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.tracker-section {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background: #e76f51;
+    transition: width 0.3s ease-in-out;
+}
+
+.step-counter {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.step-visual {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #264653;
+    border-radius: 50%;
+    background-color: #e9c46a;
+    margin: auto;
+}
+
+.tip-container {
+    background: #2a9d8f;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

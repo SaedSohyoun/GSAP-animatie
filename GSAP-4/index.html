@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactieve Gezondheidstracker</h1>
+    </header>
+    
+    <section id="calorie-tracker" class="tracker-section">
+        <h2>Calorie Tracker</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="calorieProgress"></div>
+        </div>
+    </section>
+
+    <section id="step-tracker" class="tracker-section">
+        <h2>Stappenteller</h2>
+        <div class="step-counter">
+            <span class="step-count" id="stepCount">0</span> stappen
+        </div>
+        <div class="step-visual" id="stepVisual"></div>
+    </section>
+
+    <section id="weight-tracker" class="tracker-section">
+        <h2>Gewichtstracker</h2>
+        <canvas id="weightChart"></canvas>
+    </section>
+
+    <section id="health-tips" class="tracker-section">
+        <h2>Gezondheidstips</h2>
+        <div class="tip-container" id="tipContainer">
+            <p id="healthTip">Gezondheidstip hier...</p>
+        </div>
+        <button id="randomizeTipBtn">Nieuwe Tip</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
